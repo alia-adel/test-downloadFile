@@ -3,6 +3,7 @@
  * References: 
  * https://davidwalsh.name/fetch
  * http://danml.com/download.html
+ * https://www.npmjs.com/package/downloadjs
  */
 function downloadFile(fileType) {
   var url = '';
