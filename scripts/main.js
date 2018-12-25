@@ -29,10 +29,9 @@ function downloadFile(fileType) {
 
       //window.open(URL.createObjectURL(blob), '_blank');
       console.log(blob.contentType);
-      var fileName = 'report-' + new Date();
+      var fileName = 'report';
       fileName += (blob.contentType === 'application/zip') ? '.zip' : '';
+      fileName += (blob.contentType.indexOf('image') > -1) ? '.' + blob.contentType.split('/')[1] : '';
       download(blob.raw, fileName, blob.contentType);
     });
-
-
 }
