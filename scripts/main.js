@@ -18,12 +18,12 @@ function downloadFile(fileType) {
     fetch(url)
     .then(function (response) {
       //   return response.blob();
-      return response.blob().then(blob => {
+      return response.blob().then(function(blob) {
         return {
           contentType: response.headers.get("Content-Type"),
           raw: blob
-        }
-      })
+        };
+      });
     })
     .then(function (blob) {
 
