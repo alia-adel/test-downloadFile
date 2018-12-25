@@ -17,7 +17,8 @@ function downloadFile() {
 
 
 //https://s.productreview.com.au/products/images/336982_4c9a96ee63861.jpg
-    fetch('https://lync.itworx.com//lwa/Plugins/LWAPlugin64BitInstaller32.msi')
+      fetch('https://alia-adel.github.io/test-downloadFile/assets/FetchReadableStream.zip')
+    // fetch('https://lync.itworx.com//lwa/Plugins/LWAPlugin64BitInstaller32.msi')
     // fetch('https://alia-adel.github.io/MOGO-Portfolio/assets/images/Layer%2043.jpg')
 	.then(function(response) {
     //   return response.blob();
